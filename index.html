@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> My Shop </h1>
+        <div class="cart-info">
+            cart: <span id="cart-count">0</span> items
+    </header>
+    <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <select id="categoryFilter"onchange="filterProducts()">
+            <option value="">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+        </select>
+    </div>
+    <div class="product-Grid" id="product-Grid"></div>
+    <script src="script.js"></script>
+
+</body>
+</html>
